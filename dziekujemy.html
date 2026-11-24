@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dziękujemy | GLP Dziennik</title><meta name="description" content="Płatność przyjęta.">
+<link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="/style.css"></head><body>
+<header><div class="wrap"><a class="brand" href="/"><img src="/img/icon.png" alt="">GLP Dziennik</a>
+<nav><a href="/#funkcje" class="hide-m">Funkcje</a><a href="/#cennik">Cennik</a><a href="/pobierz.html">Pobierz</a></nav></div></header>
+
+<main class="wrap" style="max-width:640px;padding-top:60px;text-align:center">
+<h1 id="t">Dziękujemy!</h1>
+<p class="lead" id="m">Płatność jest przetwarzana. Wróć do aplikacji GLP Dziennik; dostęp włączy się w ciągu kilku chwil.</p>
+<p class="small">Jeśli dostęp nie włączy się w ciągu kilku minut, napisz do nas przez „Zgłoś problem” w zakładce Więcej.</p>
+</main>
+<script>
+if (new URLSearchParams(location.search).get("error")) {
+  document.getElementById("t").textContent = "Płatność nie została zakończona";
+  document.getElementById("m").textContent = "Nic nie zostało pobrane. Wróć do aplikacji GLP Dziennik i spróbuj ponownie.";
+}
+</script>
+<footer><div class="wrap"><div class="small">© 2026 GLP Dziennik. Aplikacja zapisuje dane wpisane przez użytkownika i nie zastępuje lekarza.</div>
+<div class="small"><a href="/regulamin.html">Regulamin</a> · <a href="/prywatnosc.html">Polityka prywatności</a></div></div></footer></body></html>
