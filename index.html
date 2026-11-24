@@ -1,53 +1,112 @@
 <!doctype html>
 <html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GLP Dziennik: dziennik terapii GLP-1</title><meta name="description" content="Zastrzyki, waga, samopoczucie i plan żywienia w jednym miejscu. Zobacz, jak czujesz się w kolejnych dniach po dawce.">
-<link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="/style.css"></head><body>
-<header><div class="wrap"><a class="brand" href="/"><img src="/img/icon.png" alt="">GLP Dziennik</a>
-<nav><a href="/#funkcje" class="hide-m">Funkcje</a><a href="/#cennik">Cennik</a><a href="/pobierz.html">Pobierz</a></nav></div></header>
+<title>GLP Dziennik: dziennik terapii GLP-1</title><meta name="description" content="Zastrzyki, waga, samopoczucie i plan żywienia w jednym miejscu. Zobacz, jak czujesz się w kolejnych dniach po dawce."><meta name="theme-color" content="#1C1030">
+<link rel="icon" href="/img/favicon.png"><link rel="preload" href="/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css"></head><body>
+<header><div class="wrap"><a class="brand" href="/"><span class="logo"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5c3.6 4.4 6.5 8.2 6.5 11.6A6.5 6.5 0 0 1 5.5 14c0-3.4 2.9-7.1 6.5-11.5z"/></svg></span>GLP Dziennik</a><nav><a href="/#funkcje" class="hide-m">Funkcje</a><a href="/#kalkulator" class="hide-m">Ile do celu?</a><a href="/#cennik">Cennik</a><a class="btn small" href="/pobierz.html">Pobierz</a></nav></div></header>
 
-<main class="wrap">
-<div class="hero">
+<div class="hero"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
+<div class="wrap">
   <div>
-    <h1>Twoja terapia GLP-1 w jednym miejscu</h1>
-    <p class="lead">Dawki, waga i samopoczucie, czarno na białym. Zobacz, jak czujesz się w kolejnych dniach po zastrzyku i ile dała Ci każda dawka.</p>
-    <p><a class="btn" href="/pobierz.html">Pobierz na Androida</a></p>
-    <p class="small">7 dni za darmo, bez podawania karty. Potem od 12,50 zł miesięcznie przy planie rocznym.</p>
+    <span class="pill"><span class="dot"></span>7 dni za darmo, bez karty</span>
+    <h1>Twoja terapia GLP&#8209;1, <span class="grad-text">wreszcie czytelna.</span></h1>
+    <p class="lead">Dawki, waga i samopoczucie w jednym miejscu. Zobacz, jak czujesz się w kolejnych dniach po zastrzyku i ile naprawdę dała Ci każda dawka.</p>
+    <div class="cta-row"><a class="btn" href="/pobierz.html">Pobierz na Androida →</a><a class="btn ghost" href="#funkcje">Zobacz, jak działa</a></div>
+    <div class="trust"><span>Dane tylko dla Ciebie</span><span>Serwery w UE</span><span>Raport dla lekarza</span></div>
   </div>
-  <img class="phone" src="/img/1-tydzien-po-dawce.jpg" alt="Wykres samopoczucia w kolejnych dniach po dawce">
-</div>
-</main>
+  <div>
+    <div class="phone-wrap">
+      <div class="float-card l"><span class="small">Przypomnienie</span><b>Dziś dawka, 9:00</b></div>
+      <div class="phone"><div class="notch"></div><div class="screen" id="heroScreen">
+        <img class="on" src="/img/screens/cycle.jpg" alt="Samopoczucie w kolejnych dniach po dawce">
+        <img src="/img/screens/today.jpg" alt="Cele dnia: białko, woda, kroki, sen">
+        <img src="/img/screens/doses.jpg" alt="Wyniki na kolejnych dawkach">
+        <img src="/img/screens/plan.jpg" alt="Plan żywienia i data celu">
+      </div></div>
+      <div class="float-card r"><span class="small">Białko dziś</span><b>85 / 131 g</b></div>
+    </div>
+    <div class="dots" id="heroDots"></div>
+  </div>
+</div></div>
 
 <section id="funkcje"><div class="wrap">
-<h2>Co zyskujesz</h2>
-<div class="grid3">
-  <div class="card feature"><img src="/img/1-tydzien-po-dawce.jpg" alt=""><h3>Tydzień po dawce</h3><p>Codzienny wpis zajmuje kilkanaście sekund: apetyt, objawy i własne efekty, także te dobre. Po kilku tygodniach widzisz swój wzorzec.</p></div>
-  <div class="card feature"><img src="/img/2-wyniki-na-dawkach.jpg" alt=""><h3>Wyniki na każdej dawce</h3><p>Tempo zmiany wagi i średnie objawy na kolejnych dawkach. Konkretne liczby z Twoich danych, gotowe do pokazania lekarzowi.</p></div>
-  <div class="card feature"><img src="/img/3-plan-i-cel.jpg" alt=""><h3>Plan i realna data celu</h3><p>Kalorie i białko pod Twoją wagę docelową oraz dwie prognozy obok siebie: przy trzymaniu się planu i z Twoich ważeń.</p></div>
-</div>
-<div class="card" style="margin-top:22px"><ul class="list" style="columns:2;margin:0">
-  <li>Dziennik zastrzyków z rotacją miejsc</li><li>Przypomnienia o dawce i o wpisie</li><li>Odczyt etykiety leku aparatem</li>
-  <li>Waga, kroki i sen z Health Connect</li><li>Obwody ciała i prywatne zdjęcia sylwetki</li><li>Licznik białka i cele dnia</li>
-  <li>Glukoza z oznaczeniem posiłków</li><li>Kalkulator fiolek</li><li>Raport PDF dla lekarza</li><li>Wpisy wstecz i pełna historia</li>
-</ul></div>
+  <div class="reveal"><span class="eyebrow">Funkcje</span><h2>Wszystko, czego potrzebujesz w trakcie terapii</h2>
+  <p class="sub">Stuknij, aby zobaczyć ekran w aplikacji.</p></div>
+  <div class="tabs-grid">
+    <div class="tablist reveal" id="tabs">
+      <button class="tab on" data-img="/img/screens/cycle.jpg"><span class="ic">📈</span><span><h3>Tydzień po dawce</h3><p>Apetyt, objawy i Twoje własne efekty, także te dobre, w kolejnych dniach po zastrzyku. Po kilku tygodniach widzisz swój wzorzec.</p></span></button>
+      <button class="tab" data-img="/img/screens/today.jpg"><span class="ic">🎯</span><span><h3>Cele dnia</h3><p>Licznik białka jednym stuknięciem, woda, kroki i sen z Health Connect, minuty treningu. Każdy cel z wyjaśnieniem, skąd się wziął.</p></span></button>
+      <button class="tab" data-img="/img/screens/doses.jpg"><span class="ic">💉</span><span><h3>Wyniki na każdej dawce</h3><p>Ile chudłeś i jak się czułeś na kolejnych dawkach. Przypomnienia o dawce, rotacja miejsc wkłucia, odczyt etykiety aparatem.</p></span></button>
+      <button class="tab" data-img="/img/screens/photos.jpg"><span class="ic">📸</span><span><h3>Ciało i zdjęcia</h3><p>BMI, obwody z wykresem i prywatne zdjęcia sylwetki z porównaniem przed i po. Zdjęcia widzisz tylko Ty.</p></span></button>
+      <button class="tab" data-img="/img/screens/plan.jpg"><span class="ic">🥗</span><span><h3>Plan i data celu</h3><p>Kalorie i białko pod Twoją wagę docelową oraz dwie prognozy obok siebie: przy trzymaniu się planu i z Twoich ważeń.</p></span></button>
+      <button class="tab" data-img="/img/screens/report.jpg"><span class="ic">🩺</span><span><h3>Raport dla lekarza</h3><p>PDF z wybranego okresu: dawki, waga z wykresem, objawy i notatki. Wysyłasz mailem albo drukujesz.</p></span></button>
+    </div>
+    <div class="reveal"><div class="phone"><div class="notch"></div><div class="screen" id="tabScreen"><img class="on" src="/img/screens/cycle.jpg" alt="Ekran aplikacji"></div></div></div>
+  </div>
 </div></section>
 
-<section id="cennik"><div class="wrap">
-<h2>Cennik</h2>
-<p class="lead">Pierwsze 7 dni za darmo. Płacisz jednorazowo, bez automatycznego odnawiania i bez podawania karty z góry.</p>
-<div class="grid3" style="grid-template-columns:1fr 1fr">
-  <div class="card best"><h3>1 rok</h3><div class="price">149,99 zł</div><p class="small">ok. 12,50 zł miesięcznie, oszczędzasz 58%</p></div>
-  <div class="card"><h3>1 miesiąc</h3><div class="price">29,99 zł</div><p class="small">jednorazowo</p></div>
-</div>
-<p class="small">Płatność przez PayU (BLIK, przelew, karta), z poziomu aplikacji.</p>
+<section class="dark" id="tydzien"><div class="wrap">
+  <div class="reveal"><span class="eyebrow">Wypróbuj</span><h2>Jak może wyglądać Twój tydzień po dawce?</h2>
+  <p class="sub">Wybierz dzień. To dane przykładowe; w aplikacji ten wykres liczy się z Twoich wpisów.</p></div>
+  <div class="week reveal">
+    <div class="glass">
+      <div class="days" id="days"></div>
+      <div class="meter"><div class="row"><span>Apetyt</span><span id="v0"></span></div><div class="track"><div class="fill" id="f0" style="background:#8FA8FF"></div></div></div>
+      <div class="meter"><div class="row"><span>Nudności</span><span id="v1"></span></div><div class="track"><div class="fill" id="f1" style="background:#C08BFF"></div></div></div>
+      <div class="meter"><div class="row"><span>Energia</span><span id="v2"></span></div><div class="track"><div class="fill" id="f2" style="background:var(--lime)"></div></div></div>
+      <div class="meter" style="margin-bottom:0"><div class="row"><span>Spokój wokół jedzenia</span><span id="v3"></span></div><div class="track"><div class="fill" id="f3" style="background:var(--peach)"></div></div></div>
+    </div>
+    <div class="glass tipbox"><span class="eyebrow" id="dayName"></span><div class="big" id="tip"></div><span class="small">Przykład. U każdego wzorzec jest inny i właśnie dlatego warto go zobaczyć na własnych danych.</span></div>
+  </div>
 </div></section>
 
-<section id="pytania"><div class="wrap">
-<h2>Pytania</h2>
-<details><summary>Czy aplikacja zastępuje lekarza?</summary><p>Nie. Zapisuje to, co wpiszesz, i pokazuje zależności w Twoich danych. Każdą zmianę leczenia konsultuj z lekarzem.</p></details>
-<details><summary>Kto widzi moje dane?</summary><p>Tylko Ty, po zalogowaniu. Dane są przechowywane na serwerach w Unii Europejskiej, a zdjęcia sylwetki w prywatnym magazynie dostępnym wyłącznie z Twojego konta. W aplikacji możesz usunąć wszystkie swoje dane.</p></details>
-<details><summary>Dlaczego instalacja z pliku, a nie ze sklepu?</summary><p>Aplikacja jest na razie dostępna jako plik instalacyjny (APK) pobierany z tej strony. Instrukcja krok po kroku jest na stronie <a href="/pobierz.html">Pobierz</a>. Kolejne wersje aplikacja instaluje sama, przyciskiem „Aktualizuj”.</p></details>
-<details><summary>A iPhone?</summary><p>Na razie aplikacja działa na Androidzie. Wersja dla iPhone'a jest w przygotowaniu.</p></details>
-<details><summary>Jakie leki obsługuje?</summary><p>Semaglutyd, tirzepatyd, dulaglutyd i liraglutyd oraz inne leki z tej grupy wpisywane ręcznie.</p></details>
+<section id="kalkulator"><div class="wrap">
+  <div class="reveal"><span class="eyebrow">Ile do celu?</span><h2>Policz, ile tygodni dzieli Cię od celu</h2>
+  <p class="sub">Przesuń suwaki. W aplikacji prognoza liczy się z Twojego planu żywienia i z rzeczywistych ważeń.</p></div>
+  <div class="calc reveal">
+    <div>
+      <div class="field"><label>Obecna waga <output id="oNow"></output></label><input type="range" id="now" min="60" max="180" value="98"></div>
+      <div class="field"><label>Waga docelowa <output id="oGoal"></output></label><input type="range" id="goal" min="50" max="150" value="82"></div>
+      <div class="field" style="margin-bottom:0"><label>Tempo</label>
+        <div class="seg" id="pace"><button data-v="0.5">0,5 kg/tydz.</button><button data-v="0.75" class="on">0,75 kg/tydz.</button><button data-v="1">1 kg/tydz.</button></div></div>
+    </div>
+    <div class="result"><span class="small" style="color:rgba(255,255,255,.7)">Przy stałym tempie</span><div class="num" id="weeks"></div><div class="date" id="date"></div>
+      <span class="small" style="color:rgba(255,255,255,.6);margin-top:14px">Prosty szacunek: stałe tempo rzadko utrzymuje się do końca. Tempo ustal z lekarzem.</span></div>
+  </div>
 </div></section>
-<footer><div class="wrap"><div class="small">© 2026 GLP Dziennik. Aplikacja zapisuje dane wpisane przez użytkownika i nie zastępuje lekarza.</div>
-<div class="small"><a href="/regulamin.html">Regulamin</a> · <a href="/prywatnosc.html">Polityka prywatności</a></div></div></footer></body></html>
+
+<section id="cennik" style="padding-top:20px"><div class="wrap">
+  <div class="reveal"><span class="eyebrow">Cennik</span><h2>Prosto i bez abonamentu</h2>
+  <p class="sub">Pierwsze 7 dni za darmo. Płacisz jednorazowo, bez automatycznego odnawiania i bez podawania karty z góry.</p></div>
+  <div class="reveal">
+    <div class="toggle" id="toggle"><span class="knob"></span><button data-p="year" class="on">Rok <span class="save">−58%</span></button><button data-p="month">Miesiąc</button></div>
+    <div class="price-card">
+      <div class="amount" id="amount">149,99 zł <small>/ rok</small></div>
+      <div class="small" id="per" style="margin-top:8px">ok. 12,50 zł miesięcznie</div>
+      <ul class="list"><li>Wszystkie funkcje, bez ograniczeń</li><li>Przypomnienia i Health Connect</li><li>Raport PDF dla lekarza</li><li>Aktualizacje w cenie</li></ul>
+      <a class="btn" href="/pobierz.html">Zacznij 7 dni za darmo</a>
+      <p class="small" style="margin-top:14px">Płatność przez PayU (BLIK, przelew, karta), z poziomu aplikacji.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="pytania" style="padding-top:20px"><div class="wrap">
+  <div class="reveal"><span class="eyebrow">Pytania</span><h2>Zanim zaczniesz</h2></div>
+  <div class="faq reveal" id="faq">
+    <div class="qa"><button>Czy aplikacja zastępuje lekarza?</button><div class="ans"><p>Nie. Zapisuje to, co wpiszesz, i pokazuje zależności w Twoich danych. Każdą zmianę leczenia konsultuj z lekarzem.</p></div></div>
+    <div class="qa"><button>Kto widzi moje dane?</button><div class="ans"><p>Tylko Ty, po zalogowaniu. Dane są na serwerach w Unii Europejskiej, a zdjęcia sylwetki w prywatnym magazynie dostępnym wyłącznie z Twojego konta. W aplikacji możesz usunąć wszystkie swoje dane.</p></div></div>
+    <div class="qa"><button>Dlaczego instalacja z pliku, a nie ze sklepu?</button><div class="ans"><p>Aplikacja jest dostępna jako plik instalacyjny (APK) pobierany z tej strony. Instrukcja krok po kroku jest na stronie <a href="/pobierz.html">Pobierz</a>. Kolejne wersje aplikacja pobiera sama.</p></div></div>
+    <div class="qa"><button>A iPhone?</button><div class="ans"><p>Na razie aplikacja działa na Androidzie. Wersja dla iPhone'a jest w przygotowaniu.</p></div></div>
+    <div class="qa"><button>Jakie leki obsługuje?</button><div class="ans"><p>Semaglutyd, tirzepatyd, dulaglutyd i liraglutyd oraz inne leki z tej grupy.</p></div></div>
+    <div class="qa"><button>Co po 7 dniach?</button><div class="ans"><p>Wybierasz miesiąc albo rok i płacisz jednorazowo. Nic nie odnawia się samo. Jeśli nie zapłacisz, Twoje wpisy zostają zapisane i wrócą po opłaceniu dostępu.</p></div></div>
+  </div>
+</div></section>
+
+<section style="padding-top:10px"><div class="wrap"><div class="final reveal">
+  <h2>Zacznij dziś. Pierwsze 7 dni za darmo.</h2>
+  <p style="opacity:.9;margin:0 0 24px">Instalacja zajmuje około 2 minut.</p>
+  <a class="btn" href="/pobierz.html">Pobierz na Androida →</a>
+</div></div></section>
+<footer><div class="wrap"><div>© 2026 GLP Dziennik. Aplikacja zapisuje dane wpisane przez użytkownika i nie zastępuje lekarza.</div>
+<div><a href="/regulamin.html">Regulamin</a> · <a href="/prywatnosc.html">Polityka prywatności</a></div></div></footer>
+<script src="/site.js"></script></body></html>
